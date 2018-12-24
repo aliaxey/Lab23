@@ -6,19 +6,15 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
 import by.example.air.beans.Ticket;
 import by.example.air.dao.RaceDAO;
 import by.example.air.dao.TicketsDAO;
-
-
 @WebServlet("/newTicket")
 public class NewTicket extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+      
     public NewTicket() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
